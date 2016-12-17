@@ -9,7 +9,7 @@ lenovo_health_df <- subset(lenovo_health_df,select = c(text))
 lenovo_na_df <- do.call("rbind",lapply(lenovo_na,as.data.frame))
 lenovo_na_df <- subset(lenovo_na_df,select=c(text))
 
-# Cleaning All Tweets
+# Cleaning All the Tweets
 
 lenovo_health_df$text <- gsub("[[:blank:]]","",lenovo_health_df$text)
 lenovo_health_df$text <- gsub("[[:punct:]]","",lenovo_health_df$text)
